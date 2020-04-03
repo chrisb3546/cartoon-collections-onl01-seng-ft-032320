@@ -41,7 +41,7 @@ cheese_types = ["cheddar", "gouda", "camembert"]
 
 def find_the_cheese(maybe_cheese)
   
- cheese_types.find do |cheese|
+ maybe_cheese.find do |cheese|
    return cheese
 
 end
