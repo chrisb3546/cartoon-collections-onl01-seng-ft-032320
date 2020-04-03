@@ -32,21 +32,14 @@ end
 end
 long_planeteer_calls(calls_long)
 
-cheddar_cheese = ["cheddar", "gouda", "camembert"]
 
-def find_the_cheese(cheddar_cheese)# code an argument here
-  # the array below is here to help
-  cheddar_cheese[1]
-end
-
-find_the_cheese(cheddar_cheese)
 
 no_cheese = ["ham", "cellphone", "computer"]
 
 cheese_types = ["cheddar", "gouda", "camembert"]
 
 
-def find_the_cheese(cheese_types)
+def find_the_cheese(maybe_cheese)
   
  cheese_types.find do |cheese|
    return cheese
