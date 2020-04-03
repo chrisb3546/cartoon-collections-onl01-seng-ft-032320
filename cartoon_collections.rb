@@ -1,16 +1,65 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+ dwarves = %w[Dopey Grumpy Bashful]
+
+def roll_call_dwarves(dwarves)
+  
+  dwarves.each.with_index(1) do |index, dwarf|
+    puts "#{dwarf}. #{index}"
+  end
+end 
+
+roll_call_dwarves(dwarves)
+
+fruits = %w[apple banana orange]
+
+def summon_captain_planet(fruits)
+  fruitsb = []
+  fruits.each do |call|
+     fruitsb << "#{call.capitalize}!"
+end
+fruitsb
 end
 
-def summon_captain_planet# code an argument here
+summon_captain_planet(fruits)
+
+calls_long = ["axe", "earth", "wind", "fire"]
+
+
+def long_planeteer_calls(calls_long)
+  calls_long.any? do |word| 
+    word.length > 4# code an argument here
   # Your code here
 end
-
-def long_planeteer_calls# code an argument here
-  # Your code here
 end
+long_planeteer_calls(calls_long)
 
-def find_the_cheese# code an argument here
+cheddar_cheese = ["cheddar", "gouda", "camembert"]
+
+def find_the_cheese(cheddar_cheese)# code an argument here
   # the array below is here to help
-  cheese_types = ["cheddar", "gouda", "camembert"]
+  cheddar_cheese[1]
 end
+
+find_the_cheese(cheddar_cheese)
+
+no_cheese = ["ham", "cellphone", "computer"]
+
+cheese_types = ["cheddar", "gouda", "camembert"]
+
+
+def find_the_cheese(cheese_types)
+  
+ cheese_types.find do |cheese|
+   return cheese
+
+end
+end
+
+find_the_cheese(cheese_types)
+
+
+
+
+
+
+
+
